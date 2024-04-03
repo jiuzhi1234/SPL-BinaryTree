@@ -34,10 +34,10 @@ public class PmsAttrAttrgroupRelationController {
     /**
      * 列表
      */
-    @RequestMapping("/list")
+        es tMapping("/list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = pmsAttrAttrgroupRelationService.queryPage(params);
-
+        
         return R.ok().put("page", page);
     }
 
