@@ -37,7 +37,7 @@ public class PmsAttrAttrgroupRelationController {
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = pmsAttrAttrgroupRelationService.queryPage(params);
-
+         //modifed for ab2 R3 step
         return R.ok().put("page", page);
     }
 
